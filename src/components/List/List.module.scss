@@ -1,0 +1,11 @@
+@import "../../styles/mixins.scss";
+
+.list {
+  &_item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

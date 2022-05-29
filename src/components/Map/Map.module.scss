@@ -1,0 +1,8 @@
+@import "../../styles/mixins.scss";
+
+.map {
+  &_wrap {
+    height: 100%;
+    width: 100%;
+  }
+}

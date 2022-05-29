@@ -1,0 +1,45 @@
+@import "../../styles/mixins.scss";
+
+.item {
+  padding: 10px 14px;
+  background-color: $c-grey-200;
+  transition: $transitionDefaultDuration all ease;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+
+  &:hover {
+    background-color: $c-grey-100;
+  }
+
+  &.active {
+    background-color: $c-grey-100;
+  }
+
+  &_address {
+    font-size: 18px;
+    color: $c-text;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  &_budgets {
+    display: flex;
+
+    @include media-xs {
+      flex-wrap: wrap;
+    }
+  }
+
+  &_budget {
+    margin-right: 12px;
+    font-size: 12px;
+    color: $c-text;
+    padding: 7px 10px;
+    background-color: $c-grey-300;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
